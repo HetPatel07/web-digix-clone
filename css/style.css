@@ -1,0 +1,292 @@
+* {
+    font-family: poppins;
+    transition: .3s all;
+    list-style: none;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.home {
+    background-image: linear-gradient(rgba(27, 26, 37, 0.9), rgba(27, 26, 37, 0.9)), url(../images/miao-gengxin-466550-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 11;
+}
+.navbar-brand{
+    margin-right: 0 !important;
+}
+nav .navbar-brand {
+    padding: 25px 24px;
+}
+
+.navbar {
+    align-items: flex-start;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    flex-direction: row-reverse;
+    flex-basis: auto;
+}
+
+.navbar {
+    background: transparent !important;
+}
+
+.navbar-nav > li > a {
+    transition: .3s all;
+    letter-spacing: 1px;
+    padding: 30px 24px !important;
+    font-size: 13px;
+    font-weight: 600;
+    color:
+        #fff !important;
+}
+
+.navbar-nav > li > a:hover {
+    color: #999999 !important;
+    transition: .3s all;
+}
+
+.nav-item:hover .navbar-nav-inner {
+    display: block;
+}
+
+.navbar-nav-inner {
+    display: none;
+    background-color:
+        #1a1924;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+}
+
+.nav-item-inner a {
+    font-size: 13px;
+    color: #fff;
+    display: list-item;
+    list-style: none;
+    padding: 15px 25px;
+}
+
+.nav-item-inner a:hover {
+    text-decoration: none;
+    background-color: #242331 !important;
+}
+
+.sub-main:hover .sub-sub {
+    display: block;
+}
+
+.sub-sub {
+    display: none;
+    background-color:
+        #1a1924;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    top: 0;
+    right: -100%;
+    padding: 0;
+    list-style: none;
+}
+
+.sub-li {
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.sub-li:hover {
+    background-color: #242331;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.sidebar {
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    float: right;
+}
+
+/* home-content*/
+.home-content {
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+}
+
+.home-content p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 89px;
+    font-weight: 700;
+
+}
+
+.home-content a {
+    padding: 13px 32px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+    background-image: linear-gradient(0deg, rgba(252, 78, 27, 0.9) 0%, rgba(246, 181, 51, 0.9) 100%) !important;
+    transition: .3s all;
+    color: #fff;
+}
+
+.home-content a:hover {
+    text-decoration: none;
+    box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.1);
+    transition: .3s all;
+}
+
+.mouse {
+    padding: 5px 3px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    border: 2px solid #fff;
+    height: 44px;
+    width: 28px;
+}
+
+.dot {
+    border-radius: 100%;
+    padding: 0;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    margin: auto;
+    animation-name: dot;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes dot {
+    0% {
+        top: 8px;
+    }
+
+    100% {
+        top: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .mouse{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .home-content h1 {
+        font-size:35px;
+        font-weight: 700;
+
+    }
+    .sidebar {
+        display: block;
+    }
+    .navbar-nav{
+        display: none;
+        flex-direction: row;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+    .mouse{
+        display: none;
+    }
+    .home-content h1 {
+        font-size: 59px;
+        font-weight: 700;
+
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .navbar-nav > li > a{
+        padding: 30px 15px !important;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
