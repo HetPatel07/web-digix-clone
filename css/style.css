@@ -1,6 +1,10 @@
+:root {
+    --firstcolor: #181721;
+    --gradient: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+}
+
 * {
     font-family: poppins;
-    transition: .3s all;
     list-style: none;
 }
 
@@ -20,9 +24,11 @@ nav {
     width: 100%;
     z-index: 11;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-right: 0 !important;
 }
+
 nav .navbar-brand {
     padding: 25px 24px;
 }
@@ -197,6 +203,115 @@ nav .navbar-brand {
 }
 
 
+/*unique design*/
+
+.unique {
+    background-color: var(--firstcolor);
+    color: #fff;
+}
+
+.unique .row {
+    padding: 100px 0;
+}
+
+.unique-content {
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.unique-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.unique-content p {
+    color: #ececec;
+    line-height: 1.8;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.diamond {
+    font-size: 35px;
+    background: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/*about us part*/
+.about {
+    background-image: linear-gradient(rgba(27, 26, 37, 0.9), rgba(27, 26, 37, 0.9)), url(../images/samuel-zeller-1605-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about .row {
+    padding: 100px 0;
+}
+
+.about h2 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.about ul {
+    padding: 0;
+    margin: 50px 0;
+}
+
+.about ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.about ul li a {
+    display: list-item;
+    padding: 20px 30px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.a-special {
+    color: #fff !important;
+    background-image: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.about p:nth-of-type(1) {
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about h3 span .fas {
+    font-size: 35px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.about .heading + p {
+    font-size: 14px;
+    color: #ececec;
+}
+
 
 
 
@@ -217,24 +332,48 @@ nav .navbar-brand {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .mouse{
+    .mouse {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
+
     .home-content h1 {
-        font-size:35px;
+        font-size: 35px;
         font-weight: 700;
 
     }
+
     .sidebar {
         display: block;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         display: none;
         flex-direction: row;
     }
+
+    .inner-border-bottom2 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .about ul li {
+        display: list-item;
+        list-style: none;
+    }
+
+    .about h2 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .about h3 {
+        font-size: 20px;
+
+    }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -249,20 +388,34 @@ nav .navbar-brand {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-    .mouse{
+    .mouse {
         display: none;
     }
+
     .home-content h1 {
         font-size: 59px;
         font-weight: 700;
 
     }
-    .navbar-nav{
+
+    .navbar-nav {
         flex-direction: row;
     }
-    .navbar-nav > li > a{
+
+    .navbar-nav > li > a {
         padding: 30px 15px !important;
     }
+
+    .inner-border-bottom {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .unique-content h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+
 }
 
 /* iPads (landscape) ----------- */
