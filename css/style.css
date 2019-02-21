@@ -34,6 +34,7 @@ nav .navbar-brand {
 }
 
 .navbar {
+    background-color: var(--firstcolor) !important;
     align-items: flex-start;
 }
 
@@ -44,9 +45,6 @@ nav .navbar-brand {
     flex-basis: auto;
 }
 
-.navbar {
-    background: transparent !important;
-}
 
 .navbar-nav > li > a {
     transition: .3s all;
@@ -65,6 +63,7 @@ nav .navbar-brand {
 
 .nav-item:hover .navbar-nav-inner {
     display: block;
+    text-align: left;
 }
 
 .navbar-nav-inner {
@@ -313,6 +312,271 @@ a:hover {
 }
 
 
+/*HOW WE WORK*/
+
+
+.work {
+    background-color: var(--firstcolor);
+    color: #fff;
+    text-align: center;
+}
+
+.work h2 {
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.work .row {
+    padding: 80px 0;
+}
+
+.work p {
+    font-size: 14px;
+}
+
+.work-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.overlap .work-heading h3 {
+    margin: 0;
+    font-size: 78px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.overlap .work-heading p {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.overlap .work-heading + p {
+    color: #ececec;
+    line-height: 1.7;
+}
+
+/*our team*/
+.team {
+    background-image: linear-gradient(rgba(27, 26, 37, 0.9), rgba(27, 26, 37, 0.9)), url(../images/zurem-meru-42585-unsplash.jpg);
+    color: #fff;
+}
+
+.team .row {
+    padding: 100px 0;
+}
+
+.team h2 {
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.team-top h3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    width: 256px;
+    font-size: 45px;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.team-top h3 span {
+    -webkit-background-clip: text;
+    width: 100%;
+    float: right;
+    background-image: var(--gradient);
+    text-align: right;
+}
+
+.team h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.team p {
+    font-size: 14px;
+}
+
+.team-top + p {
+    color: #ececec;
+}
+
+/*portfolio part*/
+.portfolio {
+    background-color: var(--firstcolor);
+    color: #fff;
+}
+.portfolio>.row{
+    padding: 100px 0 0 0;
+}
+
+.portfolio p{
+    font-size: 14px;
+}
+
+.portfolio h2{
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.inner-portfolio ul {
+    list-style: none;
+}
+
+.portfolio-nav {
+    background-color: #000;
+}
+
+.inner-portfolio ul li {
+    display: inline-block;
+}
+
+.inner-portfolio ul li a {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s all;
+    display: inline-block;
+    padding: 20px 10px !important;
+    color: grey;
+}
+
+.inner-portfolio ul li a:hover {
+    color: #fff;
+    transition: .3s all;
+}
+
+.portfolio-img {
+    min-height: 340px;
+    background-image: url(../images/oladimeji-odunsi-306172-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.por2 {
+    background-image: url(../images/nordwood-themes-359015-unsplash.jpg);
+}
+
+.por3 {
+    background-image: url(../images/toa-heftiba-462478-unsplash.jpg);
+}
+
+.por4 {
+    background-image: url(../images/pineapple-supply-co-224098-unsplash.jpg);
+}
+
+.por5 {
+    background-image: url(../images/joey-pilgrim-251356.jpg);
+}
+
+.por6 {
+    background-image: url(../images/colin-rex-403161-unsplash.jpg);
+}
+
+.por7 {
+    background-image: url(../images/sead-dedic-582196-unsplash.jpg);
+}
+
+.por8 {
+    background-image: url(../images/hugo-sousa-271796-unsplash.jpg);
+}
+
+.overview{
+    padding: 50px 20px;
+}
+
+.overview h3{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.overview h3 span{
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.overview p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.overview-main{
+}
+.overview-content{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-img:hover {
+    background-image: l
+}
+
+.portfolio-img:hover a {
+    opacity: 1;
+    transition: .2s all;
+    background-color: rgba(27, 26, 37, 0.7);
+}
+
+.portfolio-img a {
+    background-color: rgba(0, 0, 0, 0);
+    transition: .2s all;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    padding: 65px;
+}
+
+.portfolio-img a h3 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.portfolio-img a p {
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -374,6 +638,29 @@ a:hover {
 
     }
 
+    .overlap .work-heading h3 {
+        margin: 0;
+        font-size: 70px;
+        font-weight: 800;
+        background: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+        background-position: center;
+        background-size: cover;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .overlap .work-heading p {
+        font-size: 20px;
+    }
+
+    .overlap {
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .overview-content p{
+        font-size: 20px;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
